@@ -88,20 +88,17 @@ def gross_per_studio(collection)
   # if the studio is already in the array, add the gross to that studio's total. 
   # if not, add it to the array
   result = {}
-  director_index = 0
-  while director_index < collection.length do
-    movie_index = 0
-    while movie_index < collection.length do
-      studio_name = collection[movie_index][:studio]
-      movie_gross = collection[movie_index][:worldwide_gross]
-      if !result[studio_name]
-        result[studio_name] = movie_gross
-      else
-        result[studio_name] += movie_gross
-      end
-      movie_index += 1
+
+  movie_index = 0
+  while movie_index < collection.length do
+    studio_name = collection[movie_index][:studio]
+    movie_gross = collection[movie_index][:worldwide_gross]
+    if !result[studio_name]
+      result[studio_name] = movie_gross
+    else
+      result[studio_name] += movie_gross
     end
-    director_index += 1
+    movie_index += 1
   end
   result
 end
