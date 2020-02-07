@@ -70,8 +70,7 @@ end
 
 
 def gross_per_studio(collection)
-  # finding the studio
-  
+
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
   # each studio.
@@ -88,7 +87,6 @@ def gross_per_studio(collection)
   # if the studio is already in the array, add the gross to that studio's total. 
   # if not, add it to the array
   result = {}
-
   movie_index = 0
   while movie_index < collection.length do
     studio_name = collection[movie_index][:studio]
