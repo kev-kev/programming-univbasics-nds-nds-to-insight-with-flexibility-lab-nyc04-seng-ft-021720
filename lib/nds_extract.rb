@@ -123,9 +123,8 @@ def movies_with_directors_set(source)
     while movie_index < source[director_index][:movies].length do
       inner_hash = {}
       inner_array = []
-      title = source[director_index][:movies][movie_index][:title]
-      movie_gross
-      inner_hash[:title] = title
+      inner_hash[:title] = source[director_index][:movies][movie_index][:title]
+      inner_hash[:worldwide_gross] = source[director_index[:movies][movie_index][:worldwide_gross]
       inner_hash[:director_name] = name
       inner_array.push(inner_hash)
       result.push(inner_array)
