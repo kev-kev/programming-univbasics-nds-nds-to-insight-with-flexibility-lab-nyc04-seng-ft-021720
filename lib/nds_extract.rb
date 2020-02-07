@@ -102,7 +102,7 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
-  pp source[0][:movies]
+  #pp source[0][:movies]
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:
@@ -133,7 +133,7 @@ def movies_with_directors_set(source)
     end
     director_index += 1
   end
-  return result 
+  pp result 
 end
 
 # ----------------    End of Your Code Region --------------------
