@@ -124,6 +124,7 @@ def movies_with_directors_set(source)
       inner_hash = {}
       inner_array = []
       movie_gross = source[director_index][:movies][movie_index][:worldwide_gross]
+      studio = source[director_index][:movies][movie_index][:studio]
       inner_hash[:title] = source[director_index][:movies][movie_index][:title]
       inner_hash[:worldwide_gross] = movie_gross
       inner_hash[:director_name] = name
