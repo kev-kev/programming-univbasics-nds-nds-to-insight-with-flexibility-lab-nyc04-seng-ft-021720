@@ -133,7 +133,7 @@ def movies_with_directors_set(source)
     end
     director_index += 1
   end
-  pp result 
+  return result 
 end
 
 # ----------------    End of Your Code Region --------------------
