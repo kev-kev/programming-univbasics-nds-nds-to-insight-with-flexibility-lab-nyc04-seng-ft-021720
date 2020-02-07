@@ -92,8 +92,8 @@ def gross_per_studio(collection)
   while director_index < collection.length do
     movie_index = 0
     while movie_index < collection.length do
-      studio_name = collection[director_index][:movies][movie_index][:studio]
-      movie_gross = collection[director_index][:movies][movie_index][:worldwide_gross]
+      studio_name = collection[movie_index][:studio]
+      movie_gross = collection[movie_index][:worldwide_gross]
       if !result[studio_name]
         result[studio_name] = movie_gross
       else
